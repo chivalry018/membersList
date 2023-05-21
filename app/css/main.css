@@ -1,0 +1,88 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background: #e9ebee;
+    margin: 0;
+    overflow-x: hidden;
+    font-weight: 300;
+    height: 100%;
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+.input {
+    border: 2px solid;
+    background-color: rgb(40, 10, 97);
+    color: #fff;
+    border-radius: 5px;
+    width: 300PX;
+    height: 45px;
+    font-size: 30px;
+   }
+ 
+   .no-spinners {
+     -moz-appearance: textfield; /* Firefox */
+     appearance: textfield; /* Rest of the browsers */
+   }
+   
+   .no-spinners::-webkit-inner-spin-button,
+   .no-spinners::-webkit-outer-spin-button {
+     -webkit-appearance: none;
+     margin: 0;
+   }
+ 
+ .table{
+   position: absolute;
+   top:15%
+ }
+ 
+ .btn-back{
+   position: absolute;
+   left:1%;
+   top: 2%;
+ }
+ 
+ .btn-add{
+   position: absolute;
+   left: 5.5%;
+   top:2%;
+ }
+ 
+ .inp{
+   position: absolute;
+   top: 5%;
+   left: 34.4%;
+ }
+ 
+ .inp h2{
+   text-align: center;
+ }
+ 
+ .inp .btns{
+   position: absolute;
+   top: 92%;
+   left: 48%;
+ }
+
+ input[type=radio]{
+    width: 2rem;
+  }
+
+.genderRadio{
+    position: absolute;
+    left: 66%;
+    top: 62%
+}
+
+.genderLabel{
+    position: absolute;
+    left: 68.3%
+}
+
+.bdayLabel{
+    position:absolute;
+    left: 30.8%;
+}
+

@@ -1,0 +1,15 @@
+node_modules
+npm-debug.log
+.tmp
+.idea
+.env
+coverage
+coverage.json
+typechain
+compiled
+*.swp
+.vscode
+
+#Hardhat files
+cache
+artifacts

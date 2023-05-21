@@ -1,0 +1,10 @@
+{
+  "name": "Lesson04",
+  "description": "Lesson04",
+  "repository": "",
+  "logo": "",
+  "keywords": [],
+  "addons" : [
+  	"mongolab"
+  ]
+}

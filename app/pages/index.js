@@ -3,7 +3,7 @@ import { browserHistory } from 'react-router'
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
-import {Modal,Button} from 'react-bootstrap'
+import {Modal,Button, Form,InputGroup, FormGroup} from 'react-bootstrap'
 
 function Index(props) {
 	const [show,setShow] = useState(false)
@@ -37,9 +37,24 @@ function Index(props) {
 					<Modal.Title>Sign in</Modal.Title>
 				</Modal.Header>
 				<Modal.Body>
+					<Form>
+						<FormGroup>
+						<Form.Label>Email</Form.Label>
+						<Form.Control
+						type='email'
+						placeholder='Email'/>
+						<br/>
+						<Form.Label>Password</Form.Label>
+						<Form.Control
+						type='password'
+						placeholder='Password'/>
+						</FormGroup>
+					</Form>
+					<br/>
 				</Modal.Body>
 				<Modal.Footer>
 					<Button variant="outline-secondary" onClick={handleClose}> Close </Button>
+					<Button variant="outline-primary" onClick={handleClose}> Login </Button>
 				</Modal.Footer>
 			</Modal>
 		</div>

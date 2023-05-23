@@ -151,3 +151,31 @@ export function deleteMember(id, res){
         res.json({status:400})
     })
 }
+
+export function loginMember(uname,pword,res){
+
+    const fetchMembers = () => {
+        return new Promise((resolve, reject) => {
+            Member.findOne({ uname: uname, pword: pword })
+            .exec((err, member) => {
+              if (err) {
+                console.error(err);
+                res.status(500).json({ error: 'Internal Server Error' });
+              } else if (!member) {
+                res.status(401).json({ error: 'Invalid credentials'});
+              } else {
+                res.status(200).json({ message: 'Login successful', status:200 , data: member });
+              }
+            });
+        });
+      };
+    
+
+    fetchMembers()
+    .then(() => {
+        res.json({status:200,  data: list })
+    })
+    .catch((error) => {
+        res.json({status:400})
+    })
+}

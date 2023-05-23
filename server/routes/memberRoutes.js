@@ -23,6 +23,14 @@ memberRoutes.get('/member/delete/:id', function(req, res){
     memberCtlr.deleteMember(req.params.id, res)
 })
 
+memberRoutes.get('/member/list', function(req, res){
+    memberCtlr.getAllMembers(res)
+})
+
+memberRoutes.post('/login', (req, res) => {
+    const { uname, pword } = req.body;
+    memberCtlr.loginMember(uname, pword, res);
+})
 
 
 export default memberRoutes

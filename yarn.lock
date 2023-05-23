@@ -9499,6 +9499,11 @@
     "source-map-resolve" "^0.5.0"
     "use" "^3.1.0"
 
+"sonnet@^0.0.1":
+  "integrity" "sha512-nEryEVHTeoROv+nDOhWEiSVCsz2NqkMuD2+OvuW0YQkmSclj8O8CzIWZFJkXCQ3zLPiiMvydtLIvOTPAi08FnA=="
+  "resolved" "https://registry.npmjs.org/sonnet/-/sonnet-0.0.1.tgz"
+  "version" "0.0.1"
+
 "sort-keys@^1.0.0":
   "integrity" "sha512-vzn8aSqKgytVik0iwdBEi+zevbTYZogewTUM6dtpmGwEcdzbub/TX4bCzRhebDCRC3QzXgJsLRKB2V/Oof7HXg=="
   "resolved" "https://registry.npmjs.org/sort-keys/-/sort-keys-1.1.2.tgz"

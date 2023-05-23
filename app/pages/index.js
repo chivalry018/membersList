@@ -65,13 +65,13 @@ function Index(props) {
 
 		<div>
 		<Modal show={show}  className="dark-modal">
-				<Modal.Header closeButton>
-					<Modal.Title>Sign in</Modal.Title>
-				</Modal.Header>
-				<Modal.Body>
-					<Form> 
-						<FormGroup>
-						<label htmlFor="uname">Username:</label>
+			<Modal.Header closeButton>
+				<Modal.Title>Sign in</Modal.Title>
+			</Modal.Header>
+			<Modal.Body>
+				<Form> 
+					<FormGroup>
+					<label htmlFor="uname">Username:</label>
 						<Form.Control
 						type='text'
 						placeholder='Email'
@@ -80,24 +80,25 @@ function Index(props) {
 						name="uname"
 						value={uname}/>
 						<br/>
-						<label htmlFor="pword">Password:</label>
-						<Form.Control
+
+					<label htmlFor="pword">Password:</label>
+					<Form.Control
 						type='password'
 						placeholder='Password'
 						onChange={handlePwordChange}
 						id="pword"
 						name="pword"
 						value={pword}/>
-						</FormGroup>
-					</Form>
-					<br/>
-				</Modal.Body>
-				<Modal.Footer>
-					<Button variant="outline-secondary" onClick={handleClose}> Close </Button>
-					<Button variant="outline-primary" onClick={handleSubmit}> Login </Button>
-				</Modal.Footer>
-			</Modal>
-			{error && <p>{error}</p>}
+					</FormGroup>
+				</Form>
+				<br/>
+			</Modal.Body>
+			<Modal.Footer>
+				<Button variant="outline-secondary" onClick={handleClose}> Close </Button>
+				<Button variant="outline-primary" onClick={handleSubmit}> Login </Button>
+			</Modal.Footer>
+		</Modal>
+		{error && <p>{error}</p>}
 		</div>
 		</>
 	)
